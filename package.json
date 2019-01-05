@@ -25,20 +25,20 @@
   "keywords": [
     "gatsby",
     "portfolio",
-    "react",
+    "react"
   ],
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "start": "npm run develop",
+    "start": "npm run develop"
   },
   "devDependencies": {
     "eslint": "^5.11.1",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jsx-a11y": "^6.1.2",
-    "eslint-plugin-react": "^7.12.2",
+    "eslint-plugin-react": "^7.12.2"
   },
   "repository": {
     "type": "git",
