@@ -17,10 +17,7 @@ export default class Home extends React.PureComponent {
     return (
       <div className="container-lg">
         <Helmet
-          title="jarjumarvin"
-          meta={[
-            { name: 'description', content: 'Personal Landing Page of Marvin Jarju' },
-          ]}
+          title="Marvin Jarju | personal page"
         />
         <div className="home-container">
           <div className="home-landing">
