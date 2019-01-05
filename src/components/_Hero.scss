@@ -1,0 +1,41 @@
+.hero-container {
+  margin: 0 auto;
+  margin-top: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  a {
+    font-weight: bold;
+  }
+
+  .hero-title {
+    font-family: 'Monaco', Consolas, 'Lucida Console', monospace;
+    font-size: 4.5em;
+    color: $main;
+
+    &:before {
+      content: '>\a0';
+    }
+
+    span {
+      background-color: rgba($main, 0.60);
+      animation: caret 1s steps(1) infinite;
+    }
+
+    @keyframes caret {
+      50% {
+        background-color: transparent;
+      }
+    }
+  }
+
+  .hero-description {
+    font-family: 'Camphor', Open Sans, Segoe UI, sans-serif;
+    font-weight: 200;
+    font-size: 1.3em;
+    line-height: 40px;
+    color: $grey;
+    margin: 40px 0;
+  }
+}

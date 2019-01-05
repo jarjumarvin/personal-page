@@ -1,0 +1,85 @@
+.terminal-container {
+  margin-top: 20vh;
+  margin: 0 auto;
+
+  .terminal {
+    .terminal-header {
+      height: 28px;
+      background-color: $terminalHeader;
+      border-radius: 10px 10px 0 0;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+
+      .header-button {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        margin-left: 8px;
+      }
+
+      .red {
+        background-color: $buttonRed;
+        border: solid 1px $buttonRedBorder;
+      }
+
+      .yellow {
+        background-color: $buttonYellow;
+        border: solid 1px $buttonYellowBorder;
+      }
+
+      .green {
+        background-color: $buttonGreen;
+        border: solid 1px $buttonGreenBorder;
+      }
+    }
+
+    .terminal-window {
+      background-color: $terminalBackground;
+      border-radius: 0 0 10px 10px;
+      font-family: 'Monaco', Consolas, 'Lucida Console', monospace;
+
+      a {
+        color: $terminalLink;
+      }
+
+      .prompt:first-child {
+        padding-top: 35px;
+      }
+
+      .prompt:last-child {
+        padding-bottom: 60px;
+      }
+
+      .prompt {
+        margin-bottom: 25px;
+        margin-left: 35px;
+        margin-left: 35px;
+        line-height: 24px;
+
+        .prompt-input {
+          color: #f7f7f7;
+
+          &:before {
+            content: '>\a0';
+          }
+        }
+
+        .prompt-return {
+          color: #e7d184;
+        }
+
+        span {
+          background-color: rgba(#f7f7f7, 0.60);
+          animation: caret 2s steps(1) infinite;
+        }
+      }
+    }
+
+    @keyframes caret {
+      50% {
+        background-color: transparent;
+      }
+    }
+  }
+}
