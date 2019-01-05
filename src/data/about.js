@@ -1,15 +1,18 @@
 export default [
   {
-    input: 'Marvin.location',
-    return: '\'Zürich, Switzerland\'',
+    id: 1,
+    query: 'Marvin.location',
+    answer: '\'Zürich, Switzerland\'',
   },
   {
-    input: 'Marvin.info',
-    return:
+    id: 2,
+    query: 'Marvin.info',
+    answer:
       '[ \'<a href="mailto:marvin.jarju@gmail.com">marvin.jarju@gmail.com</a>\', \'<a rel="noopener" href="https://github.com/jarjumarvin">github</a>\' ]',
   },
   {
-    input: 'Marvin.interests',
-    return: '[ \'korean\', \'gaming\', \'science\' ]',
+    id: 3,
+    query: 'Marvin.interests',
+    answer: '[ \'korean\', \'gaming\', \'science\' ]',
   },
 ];

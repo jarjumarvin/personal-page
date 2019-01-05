@@ -26,13 +26,28 @@ class Terminal extends React.PureComponent {
   }
 }
 
+Terminal.defaultProps = {
+  prompts: [],
+};
+
+Terminal.propTypes = {
+  prompts: PropTypes.arrayOf(
+    PropTypes.shape({
+      query: PropTypes.string,
+      answer: PropTypes.string,
+    }),
+  ),
+};
+
+export default Terminal;
+
 function Prompts(props) {
   const { prompts } = props;
   return (
     <div>
-      {prompts.map(entry => <Prompt prompt={entry} />)}
+      {prompts.map(prompt => <Prompt prompt={prompt} key={prompt.id} />)}
       <div className="prompt">
-        <div className="prompt-input">
+        <div className="prompt-question empty">
           <span>&nbsp;</span>
         </div>
       </div>
@@ -44,34 +59,33 @@ function Prompt(props) {
   const { prompt } = props;
   return (
     <div className="prompt">
-      <div className="prompt-input">{prompt.input}</div>
-      <div className="prompt-return" dangerouslySetInnerHTML={{ __html: prompt.return }} />
+      <div className="prompt-question">{prompt.query}</div>
+      <div className="prompt-answer" dangerouslySetInnerHTML={{ __html: prompt.answer }} />
     </div>
   );
 }
 
-Terminal.defaultProps = {
-  prompts: [],
+const promptShape = PropTypes.shape({
+  id: PropTypes.number,
+  query: PropTypes.string,
+  answer: PropTypes.string,
+});
+
+Prompt.propTypes = {
+  prompt: promptShape,
 };
 
-Terminal.propTypes = {
-  prompts: PropTypes.node,
+Prompt.defaultProps = {
+  prompt: {
+    query: '',
+    answer: '',
+  },
+};
+
+Prompts.propTypes = {
+  prompts: PropTypes.arrayOf(promptShape),
 };
 
 Prompts.defaultProps = {
   prompts: [],
 };
-
-Prompts.propTypes = {
-  prompts: PropTypes.node,
-};
-
-Prompt.defaultProps = {
-  prompt: {},
-};
-
-Prompt.propTypes = {
-  prompt: PropTypes.node,
-};
-
-export default Terminal;

@@ -7,10 +7,6 @@ class Typewriter extends React.Component {
     this.state = {
       text: '',
     };
-
-    this.propTypes = {
-      text: PropTypes.string.isRequired,
-    };
   }
 
   componentDidMount() {
