@@ -1,5 +1,10 @@
 export default [
   {
+    id: 0,
+    query: 'Marvin.stats',
+    answer: '[ \'21 y/o\', \'switzerland\' ]',
+  },
+  {
     id: 1,
     query: 'Marvin.contactInformation',
     answer:
@@ -9,13 +14,13 @@ export default [
     id: 2,
     query: 'Marvin.occupation',
     answer:
-      `{<br />
-        &emsp; current: 'undergraduate computer science at ETH Zürich', <br />
-        &emsp; past: {<br />
-        &emsp;&emsp; work: [ 'mobile developer', 'software engineer' ] <br />
-        &emsp;&emsp; education: [ 'federal diploma in software engineering' ] <br />
-        &emsp; } <br />
-        }`,
+      `{ <br />
+        &emsp;current: 'undergraduate at ETH Zürich',<br />
+        &emsp;past: [ <br />
+        &emsp;&emsp;'mobile developer', <br />
+        &emsp;&emsp;'software engineer' <br />
+        &emsp;]
+      <br />}`,
   },
   {
     id: 3,

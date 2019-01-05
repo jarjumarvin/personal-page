@@ -1,5 +1,4 @@
 import React from 'react';
-import Scrollchor from 'react-scrollchor';
 
 class Navbar extends React.PureComponent {
   constructor(props) {
@@ -10,9 +9,8 @@ class Navbar extends React.PureComponent {
   render() {
     return (
       <div className="navbar-container">
-        <nav className="navbar" ref={this.navbar}>
-          <Scrollchor to="#projects" onClick={() => document.getElementById('projects').scrollIntoView({ behavior: 'smooth' })}>Projects</Scrollchor>
-          <Scrollchor to="#contact" onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}>Contact</Scrollchor>
+        <nav className="navbar">
+          <a href="https://github.com/jarjumarvin">GitHub</a>
         </nav>
       </div>
     );

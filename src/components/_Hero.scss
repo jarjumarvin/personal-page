@@ -1,12 +1,12 @@
 .hero-container {
   margin: 0 auto;
-  margin-top: 10vh;
+  margin-top: 6vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
 
   @include mobile {
-    margin-top: 5vh;
+    margin-top: 3vh;
   }
 
   a {
@@ -15,7 +15,7 @@
 
   .hero-title {
     font-family: 'Monaco', Consolas, 'Lucida Console', monospace;
-    font-size: 5em;
+    font-size: 4.5em;
     color: $main;
 
     @include mobile {
@@ -44,7 +44,7 @@
     font-size: 1.3em;
     line-height: 40px;
     color: #444444;
-    margin: 40px 0;
+    margin: 20px 0;
 
     @include mobile {
       font-size: 1.2em;

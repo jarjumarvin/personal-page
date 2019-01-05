@@ -84,18 +84,16 @@
           color: $terminalReturnText;
         }
 
-        .empty {
-          span {
-            background-color: rgba(#f7f7f7, 0.60);
-            animation: caret 2s steps(1) infinite;
+        span {
+          background-color: rgba(#f7f7f7, 0.60);
+          animation: caret 1s steps(1) infinite;
+        }
+
+        @keyframes caret {
+          50% {
+            background-color: transparent;
           }
         }
-      }
-    }
-
-    @keyframes caret {
-      50% {
-        background-color: transparent;
       }
     }
   }
