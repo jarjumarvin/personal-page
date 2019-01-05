@@ -3,6 +3,11 @@
   justify-content: flex-end;
   margin: 0 auto;
 
+  @include mobile {
+    justify-content: center;
+    width: 60%;
+  }
+
   .navbar {
     display: flex;
     justify-content: space-around;

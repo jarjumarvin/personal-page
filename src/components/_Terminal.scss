@@ -3,6 +3,8 @@
   margin: 0 auto;
 
   .terminal {
+    font-family: 'Monaco', Consolas, 'Lucida Console', monospace;
+
     .terminal-header {
       height: 28px;
       background-color: $terminalHeader;
@@ -16,21 +18,33 @@
         height: 12px;
         border-radius: 50%;
         margin-left: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .header-button-center {
+          width: 4px;
+          height: 4px;
+          border-radius: 50%;
+          background-color: $buttonRedCenter;
+        }
       }
 
       .red {
         background-color: $buttonRed;
-        border: solid 1px $buttonRedBorder;
       }
 
       .yellow {
         background-color: $buttonYellow;
-        border: solid 1px $buttonYellowBorder;
       }
 
       .green {
         background-color: $buttonGreen;
-        border: solid 1px $buttonGreenBorder;
+      }
+
+      .header-text-container {
+        color: $terminalHeaderText;
+        margin: 0 auto;
       }
     }
 
@@ -38,7 +52,7 @@
       background-color: $terminalBackground;
       border-radius: 0 0 10px 10px;
       box-shadow: 0 50px 100px rgba(50, 50, 93, 0.15), 0 15px 35px rgba(50, 50, 93, 0.2), 0 5px 15px rgba(0, 0, 0, 0.12);
-      font-family: 'Monaco', Consolas, 'Lucida Console', monospace;
+      font-size: 1em;
 
       a {
         color: $terminalLink;
@@ -49,7 +63,7 @@
       }
 
       .prompt:last-child {
-        padding-bottom: 60px;
+        padding-bottom: 40px;
       }
 
       .prompt {

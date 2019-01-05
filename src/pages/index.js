@@ -7,6 +7,7 @@ import Hero from '../components/Hero';
 import Terminal from '../components/Terminal';
 
 import prompts from '../data/about';
+import lorem from '../data/lorem';
 
 export default class Home extends React.PureComponent {
   constructor(props) {
@@ -25,9 +26,16 @@ export default class Home extends React.PureComponent {
           ]}
         />
         <div className="home-container">
-          <Navbar />
-          <Hero />
-          <Terminal prompts={prompts} />
+          <div className="home-landing">
+            <Navbar />
+            <Hero />
+            <Terminal prompts={prompts} />
+          </div>
+          <div className="home-content">
+            <div className="lorem">
+              {lorem}
+            </div>
+          </div>
         </div>
       </div>
     );

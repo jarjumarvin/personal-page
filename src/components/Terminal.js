@@ -13,9 +13,14 @@ class Terminal extends React.PureComponent {
       <div className="terminal-container">
         <div className="terminal">
           <div className="terminal-header">
-            <div className="header-button red" />
+            <div className="header-button red">
+              <div className="header-button-center" />
+            </div>
             <div className="header-button yellow" />
             <div className="header-button green" />
+            <div className="header-text-container">
+              <span>~/jarjumarvin/personal</span>
+            </div>
           </div>
           <div className="terminal-window">
             <Prompts prompts={prompts} />
@@ -46,8 +51,8 @@ function Prompts(props) {
   return (
     <div>
       {prompts.map(prompt => <Prompt prompt={prompt} key={prompt.id} />)}
-      <div className="prompt">
-        <div className="prompt-question empty">
+      <div className="prompt empty">
+        <div className="prompt-question">
           <span>&nbsp;</span>
         </div>
       </div>

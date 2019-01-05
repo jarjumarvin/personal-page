@@ -14,14 +14,14 @@ class Typewriter extends React.Component {
       text,
       min,
       max,
-      delay,
+      initialDelay,
     } = this.props;
 
     this.type(
       text,
       min,
       max,
-      delay,
+      initialDelay,
     );
   }
 
@@ -55,7 +55,7 @@ Typewriter.propTypes = {
   text: PropTypes.string,
   min: PropTypes.number,
   max: PropTypes.number,
-  delay: PropTypes.number,
+  initialDelay: PropTypes.number,
 };
 
 Typewriter.defaultProps = {
@@ -63,7 +63,7 @@ Typewriter.defaultProps = {
   text: 'Let me type something!!',
   min: 90,
   max: 160,
-  delay: 700,
+  initialDelay: 700,
 };
 
 export default Typewriter;
