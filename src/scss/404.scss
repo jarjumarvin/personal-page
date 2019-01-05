@@ -1,0 +1,22 @@
+@import 'colors';
+
+.page_not_found_container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .page_not_found {
+    margin-bottom: 15vh;
+
+    h1 {
+      color: $main;
+      font-weight: bold;
+      font-size: 5em;
+    }
+    p {
+      color: $textBlack;
+      font-size: 2em;
+    }
+  }
+}
