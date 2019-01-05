@@ -19,8 +19,7 @@ export default class Home extends React.PureComponent {
         <Helmet
           title="jarjumarvin"
           meta={[
-            { name: 'description', content: 'Sample' },
-            { name: 'keywords', content: 'sample, something' },
+            { name: 'description', content: 'Personal Landing Page of Marvin Jarju' },
           ]}
         />
         <div className="home-container">
