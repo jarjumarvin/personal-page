@@ -2,7 +2,6 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import '../scss/index.scss';
 
-import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
 import Terminal from '../components/Terminal';
 
@@ -26,7 +25,6 @@ export default class Home extends React.PureComponent {
         />
         <div className="home-container">
           <div className="home-landing">
-            <Navbar />
             <Hero />
             <Terminal prompts={prompts} />
           </div>

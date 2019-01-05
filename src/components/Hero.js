@@ -13,6 +13,10 @@ class Hero extends React.PureComponent {
         <Typewriter className="hero-title" text="Marvin Jarju" />
         <div className="hero-description">
           I am a computer science student. I enjoy making things.
+          <br />
+          Find me on
+          <a href="https://github.com/jarjumarvin"> Github</a>
+          .
         </div>
       </div>
     );

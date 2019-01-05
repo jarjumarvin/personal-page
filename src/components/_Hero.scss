@@ -43,14 +43,13 @@
     font-weight: 200;
     font-size: 1.3em;
     line-height: 40px;
-    color: #444444;
-    margin: 20px 0;
+    color: $textBlack;
+    margin: 30px 0 40px 0;
 
     @include mobile {
       font-size: 1.2em;
       line-height: 30px;
       max-width: 100%;
-      color: #444444;
       margin: 20px 0;
     }
   }

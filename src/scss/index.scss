@@ -3,18 +3,12 @@
 @import 'colors';
 @import 'breakpoints';
 
-@import '../components/Navbar';
 @import '../components/Hero';
 @import '../components/Terminal';
 
 @font-face {
   font-family: 'Monaco';
   src: url('./fonts/monaco-webfont.woff') format('woff');
-}
-
-html, body {
-  width: 100%;
-  height: 100%;
 }
 
 body {
@@ -50,7 +44,7 @@ a {
       font-weight: 200;
       font-size: 1.2em;
       line-height: 30px;
-      color: #444444;
+      color: $textBlack;
       margin: 40px 0;
     }
   }
