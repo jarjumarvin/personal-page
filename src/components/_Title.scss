@@ -1,4 +1,4 @@
-.hero-container {
+.title-container {
   margin: 0 auto;
   margin-top: 6vh;
   display: flex;
@@ -13,7 +13,7 @@
     font-weight: bold;
   }
 
-  .hero-title {
+  .title-typewriter {
     font-family: 'Monaco', Consolas, 'Lucida Console', monospace;
     font-size: 4.5em;
     color: $main;
@@ -38,7 +38,7 @@
     }
   }
 
-  .hero-description {
+  .title-subtitle {
     font-family: 'Camphor', Open Sans, Segoe UI, sans-serif;
     font-weight: 200;
     font-size: 1.3em;

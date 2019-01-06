@@ -18,9 +18,6 @@ class Terminal extends React.PureComponent {
             </div>
             <div className="header-button yellow" />
             <div className="header-button green" />
-            <div className="header-text-container">
-              <span>~/jarjumarvin/personal</span>
-            </div>
           </div>
           <div className="terminal-window">
             <Prompts prompts={prompts} />
