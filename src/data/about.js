@@ -6,7 +6,7 @@ export default [
   },
   {
     id: 1,
-    query: 'Marvin.contactInformation',
+    query: 'Marvin.contact',
     answer:
       '[ \'<a href="mailto:marvin.jarju@gmail.com">marvin.jarju@gmail.com</a>\', \'<a rel="noopener" href="https://github.com/jarjumarvin">github</a>\' ]',
   },
@@ -15,7 +15,7 @@ export default [
     query: 'Marvin.occupation',
     answer:
       `{ <br />
-        &emsp;current: 'undergraduate at ETH Zürich',<br />
+        &emsp;current: 'undergraduate @ ETH Zürich',<br />
         &emsp;past: [ <br />
         &emsp;&emsp;'mobile developer', <br />
         &emsp;&emsp;'software engineer' <br />
@@ -25,6 +25,6 @@ export default [
   {
     id: 3,
     query: 'Marvin.interests',
-    answer: '[ \'korean\', \'gaming\', \'science\' ]',
+    answer: '[ \'korean\', \'science\' ]',
   },
 ];
