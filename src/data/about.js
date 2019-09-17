@@ -2,7 +2,7 @@ export default [
   {
     id: 0,
     query: 'Marvin.stats',
-    answer: '[ \'21 y/o\', \'switzerland\' ]',
+    answer: '[ \'22 y/o\', \'switzerland\' ]',
   },
   {
     id: 1,
